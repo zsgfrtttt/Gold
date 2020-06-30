@@ -83,7 +83,11 @@ public class Gold {
                 if (defineShadowColor()) {
                     shadow.setShadowColor(shadowStartColor, shadowEndColor);
                 }
-                view.setBackground(shadow);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    view.setBackground(shadow);
+                } else {
+                    view.setBackgroundDrawable(shadow);
+                }
             }
         }
 
