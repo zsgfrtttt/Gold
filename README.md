@@ -14,7 +14,7 @@
 ```
 在Module的build.gradle在添加以下代码
 ```
-	implementation 'com.github.zsgfrtttt:Gold:1.0.0'
+	implementation 'com.github.zsgfrtttt:Gold:1.0.2'
 ```
 **注意：** 依赖迁移至Androidx
 
